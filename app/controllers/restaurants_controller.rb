@@ -9,6 +9,7 @@ class RestaurantsController < ApplicationController
 
   def new
     @restaurant = Restaurant.new # needed to instantiate the form_for
+    @categories = ["chinese", "italian", "japanese", "french", "belgian"]
   end
 
   def create
